@@ -1,0 +1,35 @@
+{
+    "name": "jundayw/laravel-bm25",
+    "description": "bm25 is an algorithm used to evaluate the correlation between search terms and documents. It is an algorithm based on a probabilistic retrieval model.",
+    "keywords": [
+        "laravel",
+        "bm25"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jundayw",
+            "email": "jundayw@126.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jundayw\\LaravelBM25\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jundayw\\LaravelBM25\\BM25ServiceProvider"
+            ],
+            "aliases": {
+                "Render": "Jundayw\\LaravelBM25\\Support\\Facades\\BM25"
+            }
+        }
+    }
+}
